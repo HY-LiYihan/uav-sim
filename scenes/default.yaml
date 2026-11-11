@@ -1,0 +1,12 @@
+# World paths are relative to the repository root; coordinates are Gazebo ENU.
+name: default
+world_file: third_party/PX4-Autopilot/Tools/simulation/gz/worlds/default.sdf
+world_name: default
+vehicle:
+  model: x500
+  spawn_xyz: [0.0, 0.0, 0.3]
+  spawn_yaw: 0.0
+mavlink:
+  sdk_port: 14540
+ros:
+  enabled: false

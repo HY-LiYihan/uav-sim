@@ -1,0 +1,13 @@
+# Clear central launch area: x/y within +/-15 m. Units: metres and radians.
+# World coordinates are ENU; MAVSDK local control is NED.
+name: obstacle_course
+world_file: worlds/obstacle_course.sdf
+world_name: obstacle_course
+vehicle:
+  model: x500
+  spawn_xyz: [0.0, 0.0, 0.3]
+  spawn_yaw: 0.0
+mavlink:
+  sdk_port: 14540
+ros:
+  enabled: false

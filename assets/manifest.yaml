@@ -1,0 +1,10 @@
+# Official aircraft/world assets are already pinned by the PX4 nested submodule.
+# Add optional third-party downloads here; never use a floating latest URL.
+# Example entry:
+# - id: office-v1
+#   url: https://example.org/office-v1.tar.gz
+#   filename: office-v1.tar.gz
+#   sha256: <64 hex characters from a verified download>
+#   license: CC-BY-4.0
+#   source: https://example.org/office
+resources: []

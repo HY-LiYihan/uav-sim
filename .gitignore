@@ -1,0 +1,8 @@
+.venv/
+.venv-build/
+.cache/
+logs/*
+!logs/.gitkeep
+assets/cache/
+__pycache__/
+*.pyc

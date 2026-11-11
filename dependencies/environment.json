@@ -1,0 +1,14 @@
+{
+  "recorded_at": "2026-11-11T21:27:09.796787+00:00",
+  "host_os": "Linux-6.8.0-138-generic-x86_64-with-glibc2.35",
+  "image_tag": "uav-sim:jammy-harmonic",
+  "image_id": "sha256:f50b51272dd24f71e5c4648ba52ae1da69a86b4eac72ff76be9d5796134526f4",
+  "px4_tag": "v1.17.0",
+  "px4_commit": "d6f12ad1c4f70ad3230afd7d86e971421e02fef4",
+  "gazebo_models_commit": "b6127f4ec20de867e215fb5f78ae88b80f371909",
+  "gazebo_sim": "8.15.0",
+  "sdk": "mavsdk-grpc==4.0.5",
+  "python_control": "3.10.12",
+  "python_build": "3.10.12",
+  "ros_core_required": false
+}

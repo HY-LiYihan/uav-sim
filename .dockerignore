@@ -1,0 +1,7 @@
+.git
+third_party
+.venv*
+.cache
+logs
+assets
+__pycache__
