@@ -1,0 +1,12 @@
+# Local KSQL airport map. Spawn on the runway area near the origin.
+name: ksql_airport
+world_file: worlds/ksql_airport.sdf
+world_name: ksql_airport
+vehicle:
+  model: x500
+  spawn_xyz: [0.0, 0.0, 0.5]
+  spawn_yaw: 0.0
+mavlink:
+  sdk_port: 14540
+ros:
+  enabled: false

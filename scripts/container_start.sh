@@ -6,7 +6,7 @@ export GZ_SIM_SYSTEM_PLUGIN_PATH="${GZ_SIM_SYSTEM_PLUGIN_PATH:-}"
 source ./gz_env.sh
 export GZ_PARTITION="${GZ_PARTITION:?}"
 export GZ_IP=127.0.0.1
-export GZ_SIM_RESOURCE_PATH="/workspace/models:/workspace/worlds:${GZ_SIM_RESOURCE_PATH:-}"
+export GZ_SIM_RESOURCE_PATH="/workspace/models:/workspace/worlds:/workspace/assets/cache/maps:${GZ_SIM_RESOURCE_PATH:-}"
 export PX4_GZ_STANDALONE=1 PX4_SIM_MODEL=gz_x500 PX4_SYS_AUTOSTART=4001
 export GZ_SIM_SERVER_CONFIG_PATH="${GZ_SIM_SERVER_CONFIG_PATH:-}"
 # The startup script reads explicit PX4_GZ_MODELS from gz_env.sh.

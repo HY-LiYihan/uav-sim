@@ -1,0 +1,12 @@
+# Local Baylands map. The airport area is placed near the origin by the world include.
+name: baylands
+world_file: worlds/baylands.sdf
+world_name: baylands
+vehicle:
+  model: x500
+  spawn_xyz: [0.0, 0.0, 0.5]
+  spawn_yaw: 0.0
+mavlink:
+  sdk_port: 14540
+ros:
+  enabled: false

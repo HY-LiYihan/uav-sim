@@ -155,6 +155,20 @@ SDK 包名称需要与代码一致：这里使用的是 `mavsdk-grpc`，不是�
 
 资源下载器读取 `assets/manifest.yaml`，将下载保存到 `assets/cache/` 并校验 SHA256。清单当前为空，因此命令不会下载额外地图；官方飞机和世界由 PX4 子模块提供。下载器不自动解压，压缩包需要按资源说明手动解压、配置搜索路径并完成地图验收。导入外部地图还需要校验碰撞、材质、比例、出生点、传感器可见性和性能。
 
+### 本地大地图（KSQL / Baylands）
+
+`scenes/ksql_airport.yaml` 和 `scenes/baylands.yaml` 使用 `assets/cache/maps/` 下的 OpenRobotics Fuel 资源：KSQL 机场约 54 MB，Baylands 约 393 MB，另有 15 MB 水面（`coast_water`）。这些二进制不提交 Git，`assets/cache/` 已在 `.gitignore` 中。
+
+首次使用时按 `docs/map-scene-survey.md` 下载 `ksql_airport`、`baylands`、`coast_water`，把各自 `model.sdf` 中的绝对 Fuel URI 改写为本地 `model://`，然后启动：
+
+```bash
+./scripts/start.sh --scene ksql_airport
+# 或
+./scripts/start.sh --scene baylands
+```
+
+切换场景前先运行 `./scripts/stop.sh`。`scripts/container_start.sh` 已将 `assets/cache/maps` 加入 `GZ_SIM_RESOURCE_PATH`。
+
 ## 工程布局与依赖更新
 
 ```text
