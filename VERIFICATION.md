@@ -1,6 +1,8 @@
 # 本机安装与验收记录
 
-记录日期：2026-11-12（Asia/Shanghai）。工作区：`/home/liyh/Documents/deepseek-harness/default-workspace/uav-sim`。
+记录日期：2026-11-12（Asia/Shanghai）。当前项目目录：`/home/liyh/uav-sim`。项目已从 DSH 默认工作区整体迁入用户主目录；原项目目录已移除，历史日志中的旧绝对路径保留为当时的运行记录。
+
+迁移后重建了宿主控制虚拟环境，确认 40 个 Git 子模块仍在固定提交，容器挂载已切换到新目录；障碍场景 GPU GUI 启动与 MAVSDK 遥测复测通过，诊断为 0 failures、0 warnings。迁移复测日志为 `logs/doctor-after-move.log`、`logs/start-after-move.log`、`logs/telemetry-after-move.log`。
 
 ## 实际安装环境
 
